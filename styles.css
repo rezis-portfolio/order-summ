@@ -1,0 +1,169 @@
+body {
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100vw 50vh;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+
+.head-img img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name h1 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.name p {
+  text-align: center;
+  color: rgb(172, 172, 172);
+}
+
+.subscribtion {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  background-color: rgb(236, 236, 236);
+  border-radius: 10px;
+}
+
+.subscribtion .icon {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.subscribtion .plans {
+  margin-right: 100px;
+}
+
+.subscribtion .plans h2 {
+  font-size: 16px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 0;
+}
+
+.subscribtion .plans h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 6px;
+  color: gray;
+}
+
+button {
+  margin-top: 25px;
+  width: 80%;
+  padding: 15px;
+  font-weight: 700;
+}
+
+.payment {
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 15px;
+  color: hsl(225, 100%, 98%);
+  font-size: 14px;
+  transition: calc(0.4s);
+  box-shadow: 2px 25px 10px rgb(0, 0, 0, 0.2)
+}
+
+.payment:hover {
+  background-color: hsl(224, 23%, 55%);
+  cursor: pointer;
+}
+
+.cancel {
+  background-color: #fff;
+  border: none;
+  margin-bottom: 30px;
+  color: gray;
+  transition: calc(0.5s);
+}
+
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  body {
+    padding: 100px 0;
+  }
+
+  main {
+    width: 85%;
+  }
+
+  .head-img {
+    width: 100%;
+  }
+
+  .head-img img {
+    width: 100%;
+  }
+
+  .subscribtion {
+    width: 90%;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .subscribtion .icon {
+    margin: 0;
+  }
+
+  .subscribtion .plans {
+    margin: 0;
+  }
+
+  button {
+    width: 90%;
+  }
+
+  
+}
+
+
+footer { 
+  font-size: 16px; 
+  text-align: center;
+}
+
+
+footer a { 
+  color: hsl(223, 47%, 23%); 
+  text-decoration: overline;
+}
+
